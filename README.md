@@ -21,15 +21,15 @@ Add this dependency to your `pom.xml`:
 ```xml
 <dependency>
     <groupId>com.iftm</groupId>
-    <artifactId>matchmaking-client</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>mentorship-client</artifactId>
+    <version>1.0-SNAPSHOT</version>
 </dependency>
 ```
 
 ### Gradle
 
 ```gradle
-implementation 'com.iftm:matchmaking-client:0.0.1-SNAPSHOT'
+implementation 'com.iftm:mentorship-client:1.0-SNAPSHOT'
 ```
 
 ## Available DTOs
@@ -39,7 +39,7 @@ implementation 'com.iftm:matchmaking-client:0.0.1-SNAPSHOT'
 Request object for finding a mentor match based on expertise tags.
 
 ```java
-package com.iftm.matchmaking.adapter.in.web.dto;
+package com.iftm.mentorship_client.dto;
 
 import java.util.List;
 
@@ -60,7 +60,7 @@ MatchmakingRequestDTO request = MatchmakingRequestDTO.builder()
 Response object containing the matched mentor information.
 
 ```java
-package com.iftm.matchmaking.adapter.in.web.dto;
+package com.iftm.mentorship_client.dto;
 
 public class MatchmakingResponseDTO {
     private String mentorId;  // ID of matched mentor (null if no match)
@@ -82,7 +82,7 @@ String message = response.getMessage();
 Simple synchronous HTTP client using Spring's RestTemplate.
 
 ```java
-import com.iftm.matchmaking.adapter.in.web.dto.*;
+import com.iftm.mentorship_client.dto.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.beans.factory.annotation.Value;
@@ -119,7 +119,7 @@ public class MatchmakingClient {
 Reactive HTTP client for non-blocking operations.
 
 ```java
-import com.iftm.matchmaking.adapter.in.web.dto.*;
+import com.iftm.mentorship_client.dto.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
@@ -174,7 +174,7 @@ public class YourApplication {
 
 **Create Feign Client:**
 ```java
-import com.iftm.matchmaking.adapter.in.web.dto.*;
+import com.iftm.mentorship_client.dto.*;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
@@ -212,7 +212,7 @@ matchmaking.service.url=http://localhost:8082
 Here's a complete example of integrating the client into a Mentorship Service:
 
 ```java
-import com.iftm.matchmaking.adapter.in.web.dto.*;
+import com.iftm.mentorship_client.dto.*;
 import org.springframework.stereotype.Service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -388,5 +388,5 @@ This project is part of the Uberhub Mentorias platform.
 
 ---
 
-**Version**: 0.0.1-SNAPSHOT  
+**Version**: 1.0-SNAPSHOT  
 **Last Updated**: November 25, 2025
