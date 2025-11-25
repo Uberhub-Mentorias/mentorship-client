@@ -1,6 +1,6 @@
-# Matchmaking Service Client Library
+# Mentorship Service Client Library
 
-A lightweight Java client library for integrating with the Matchmaking Service API. This library provides DTOs and client implementations to easily consume the Matchmaking Service from other microservices.
+A lightweight Java client library for sharing DTOs across microservices in the Uberhub Mentorias platform. This library provides common data transfer objects and client implementations to facilitate communication between microservices.
 
 ## Overview
 
@@ -193,9 +193,11 @@ public interface MatchmakingClient {
 
 ## Configuration
 
-Add to your `application.yml` or `application.properties`:
+Configure the target microservice URL in your `application.yml` or `application.properties`.
 
-### application.yml
+### Example for Matchmaking Service
+
+#### application.yml
 ```yaml
 matchmaking:
   service:
@@ -207,9 +209,11 @@ matchmaking:
 matchmaking.service.url=http://localhost:8082
 ```
 
-## Usage Example: Mentorship Service Integration
+## Usage Example: Integration with Other Microservices
 
-Here's a complete example of integrating the client into a Mentorship Service:
+Here's a complete example of integrating the client DTOs into another microservice.
+
+### Example: Mentorship Service using Matchmaking DTOs
 
 ```java
 import com.iftm.mentorship_client.dto.*;
@@ -333,7 +337,11 @@ class MentorshipServiceTest {
 }
 ```
 
-## API Endpoints
+## Microservices Using This Library
+
+This client library is used by multiple microservices in the Uberhub Mentorias platform:
+
+### Matchmaking Service
 
 The Matchmaking Service provides the following endpoints:
 
@@ -343,6 +351,10 @@ The Matchmaking Service provides the following endpoints:
 | GET | `/actuator/health` | Health check |
 | GET | `/swagger-ui.html` | API Documentation |
 | GET | `/api-docs` | OpenAPI JSON |
+
+### Other Services
+
+Other microservices can use the DTOs from this library to communicate with each other, ensuring type safety and consistency across the platform.
 
 ## Requirements
 
@@ -379,8 +391,8 @@ This client library requires:
 ## Support
 
 For issues or questions:
-- **Repository**: https://github.com/Uberhub-Mentorias/matchmaking-service
-- **API Documentation**: http://localhost:8082/swagger-ui.html
+- **Repository**: https://github.com/Uberhub-Mentorias/mentorship-client
+- **Platform**: https://github.com/Uberhub-Mentorias
 
 ## License
 
