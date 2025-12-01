@@ -1,4 +1,4 @@
-package com.mentorship.profile.dto.tag;
+package com.iftm.mentorship_client.dto.tag;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;

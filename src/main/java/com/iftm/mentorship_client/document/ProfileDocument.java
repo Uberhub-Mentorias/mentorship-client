@@ -1,4 +1,4 @@
-package com.mentorship.profile.document;
+package com.iftm.mentorship_client.document;
 
 import java.time.Instant;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.mentorship.profile.document;
+package com.iftm.mentorship_client.document;
 
 public enum ProfileStatus {
     PENDING,

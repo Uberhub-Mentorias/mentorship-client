@@ -1,10 +1,10 @@
-package com.mentorship.profile.mapper;
+package com.iftm.mentorship_client.mapper;
 
-import com.mentorship.profile.document.ProfileDocument;
-import com.mentorship.profile.document.ProfileStatus;
-import com.mentorship.profile.dto.profile.CreateProfileRequest;
-import com.mentorship.profile.dto.profile.ProfileResponseDTO;
-import com.mentorship.profile.dto.profile.UpdateProfileRequest;
+import com.iftm.mentorship_client.document.ProfileDocument;
+import com.iftm.mentorship_client.document.ProfileStatus;
+import com.iftm.mentorship_client.dto.profile.CreateProfileRequest;
+import com.iftm.mentorship_client.dto.profile.ProfileResponseDTO;
+import com.iftm.mentorship_client.dto.profile.UpdateProfileRequest;
 
 public class ProfileMapper {
 

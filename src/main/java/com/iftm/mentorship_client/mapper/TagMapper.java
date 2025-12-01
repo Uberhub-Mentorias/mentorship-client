@@ -1,7 +1,7 @@
-package com.mentorship.profile.mapper;
+package com.iftm.mentorship_client.mapper;
 
-import com.mentorship.profile.document.TagDocument;
-import com.mentorship.profile.dto.tag.TagResponseDTO;
+import com.iftm.mentorship_client.document.TagDocument;
+import com.iftm.mentorship_client.dto.tag.TagResponseDTO;
 
 public class TagMapper {
 

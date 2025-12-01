@@ -1,4 +1,4 @@
-package com.mentorship.profile.dto.profile;
+package com.iftm.mentorship_client.dto.profile;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
