@@ -1,5 +1,6 @@
-package com.mentorship.profile.dto.profile;
+package com.iftm.mentorship_client.dto;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,8 +10,9 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class UpdateProfileRequest {
+public class CreateProfileRequest {
 
+  @NotBlank
   private String miniBio;
 
   private List<String> areas;
