@@ -1,0 +1,34 @@
+package com.iftm.mentorship_client.dto;
+
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.iftm.mentorship_client.model.enums.Role;
+import com.iftm.mentorship_client.model.enums.Status;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import java.util.Set;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserDTO {
+    
+    private String id;
+    private String name;
+    private String email;
+    
+    // não deve ser devolvido na resposta (GET).
+    private String password; 
+    
+    private String telefone;
+    private String empresa;
+    private Set<Role> roles;
+    private Status status;
+    private Integer voucherCreditBalance;
+    private String accessToken;
+    private Long expiresIn;
+}
