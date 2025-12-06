@@ -1,7 +1,6 @@
 package com.iftm.mentorship_client.dto;
 
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 import com.iftm.mentorship_client.model.enums.Role;
 import com.iftm.mentorship_client.model.enums.Status;
 
@@ -19,11 +18,7 @@ public class UserDTO {
     
     private String id;
     private String name;
-    private String email;
-    
-    // não deve ser devolvido na resposta (GET).
-    private String password; 
-    
+    private String email;    
     private String telefone;
     private String empresa;
     private Set<Role> roles;
@@ -31,4 +26,5 @@ public class UserDTO {
     private Integer voucherCreditBalance;
     private String accessToken;
     private Long expiresIn;
+    private String firebaseToken;
 }
