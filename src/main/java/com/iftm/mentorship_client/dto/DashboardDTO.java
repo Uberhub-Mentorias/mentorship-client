@@ -15,6 +15,7 @@ public class DashboardDTO {
     private long totalMentorships;
     private long totalUsers;
     private long totalMentors;
+    private long totalMentees;
 
     private long totalVouchers;
     private long totalActiveVouchers;
