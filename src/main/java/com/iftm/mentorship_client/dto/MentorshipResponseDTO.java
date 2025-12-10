@@ -15,14 +15,26 @@ import com.iftm.mentorship_client.model.enums.MentorshipStatus;
 public class MentorshipResponseDTO {
     
     private String id;
+
+    private String requestId;
     
     private String menteeId;
     
     private String mentorId;
     
+    private String mentorName;
+    
+    private String mentorJobTitle;
+
+    private String mentorCompany;
+    
+    private Integer rank;
+    
     private MentorshipStatus status;
     
     private List<String> tags;
+
+    private List<String> mentorTags;
     
     private String scheduledSessionId;
     

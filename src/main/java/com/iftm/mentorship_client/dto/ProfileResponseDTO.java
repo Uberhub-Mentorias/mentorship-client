@@ -17,6 +17,8 @@ public class ProfileResponseDTO {
   private String miniBio;
   private List<String> areas;
   private String schedulingLink;
+  private String company;
+  private String jobTitle;
   private String status;
 
   private Instant createdAt;
