@@ -180,4 +180,15 @@ public final class UserHeaderUtils {
                 .map(userId -> userId.equals(resourceOwnerId))
                 .orElse(false);
     }
+    
+    /**
+     * Gets the authorization token from request headers.
+     * 
+     * @param request the HTTP servlet request
+     * @return Optional containing authorization token if present
+     */
+    public static Optional<String> getAuthorizationToken(HttpServletRequest request) {
+        return Optional.ofNullable(request.getHeader("Authorization"))
+                .filter(s -> !s.isBlank());
+    }
 }
