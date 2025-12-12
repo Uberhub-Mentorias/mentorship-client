@@ -17,7 +17,7 @@ public class UpdateProfileRequest {
 
   private String schedulingLink;
 
-  private String company;
+  private String empresa;
 
   private String jobTitle;
 }
