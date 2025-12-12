@@ -13,7 +13,7 @@ import java.util.List;
 public class ProfileResponseDTO {
 
   private String id;
-  private String mentorId;
+  private String userId;
   private String miniBio;
   private List<String> areas;
   private String schedulingLink;

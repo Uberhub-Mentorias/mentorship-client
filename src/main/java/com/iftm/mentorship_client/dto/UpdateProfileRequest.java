@@ -20,6 +20,4 @@ public class UpdateProfileRequest {
   private String company;
 
   private String jobTitle;
-
-  private String photoUrl;
 }
