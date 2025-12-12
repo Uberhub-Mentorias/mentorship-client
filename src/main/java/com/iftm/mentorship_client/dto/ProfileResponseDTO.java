@@ -6,6 +6,9 @@ import lombok.NoArgsConstructor;
 
 import java.time.Instant;
 import java.util.List;
+import java.util.Set;
+
+import com.iftm.mentorship_client.model.enums.Role;
 
 @Data
 @NoArgsConstructor
@@ -14,6 +17,12 @@ public class ProfileResponseDTO {
 
   private String id;
   private String userId;
+
+  private String name;
+  private String email;
+  private String telefone;
+  private Set<Role> roles;
+
   private String miniBio;
   private List<String> areas;
   private String schedulingLink;
