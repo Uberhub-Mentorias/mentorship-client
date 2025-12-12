@@ -2,7 +2,6 @@ package com.iftm.mentorship_client.dto;
 
 
 import com.iftm.mentorship_client.model.enums.Role;
-import com.iftm.mentorship_client.model.enums.Status;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -22,7 +21,7 @@ public class UserDTO {
     private String telefone;
     private String empresa;
     private Set<Role> roles;
-    private Status status;
+    private Boolean isActive;
     private Integer voucherCreditBalance;
     private String accessToken;
     private Long expiresIn;
